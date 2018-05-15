@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 Delegates are objects that act as methods. These methods can be static, instance, lambda, etc. Internally, a delegate is transformed into a class of its own. This is why people typically define them outside of a class.
 
 ```cs
@@ -29,7 +29,7 @@ int x = t(3) // x = 6
 You can also multicast delegates. Each method is called in the order it was added to the delegate. However, the return value will be the result of the last method.
 
 
-# Practice
+## Practice
 ```C# runnable
 using System;
 
