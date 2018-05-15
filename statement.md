@@ -1,25 +1,14 @@
-# Welcome!
+# Delegates
+Delegates are objects that act as methods. These methods can be static, instance, lambda, etc.
 
-This C# template lets you get started quickly with a simple one-page playground.
+```
+delegate int Transformer (int x);
+```
+This delegate takes an int argument and returns an int.
 
-```C# runnable
-// { autofold
-using System;
-
-class Hello 
-{
-    static void Main() 
-    {
-// }
-
-Console.WriteLine("Hello World!");
-
-// { autofold
-    }
-}
-// }
+```
+static int Square (int x) = x * x;
+Transformer t = Square;
 ```
 
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), use the [Advanced C# template](https://tech.io/select-repo/386)
+Because `Square` follows `Transformer`'s signature, we can assign it as a `Transformer` type.
