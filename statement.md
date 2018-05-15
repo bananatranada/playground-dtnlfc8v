@@ -30,16 +30,20 @@ You can also multicast delegates. Each method is called in the order it was adde
 
 
 ## Practice
+* Create a delegate that takes in an int and returns void.
+* Create and attach 2 static methods to a delegate object. Each static method should use `Console.WriteLine` to output the int that was passed in.
+* Call the delegate and observe the order in which the methods were called.
+
 ```C# runnable
 using System;
 
 namespace App
 {
-    class Hello
+    class DelegateExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello");
+            
         }
     }
 }
