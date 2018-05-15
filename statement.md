@@ -20,10 +20,25 @@ int x = t(4) // x = 16
 
 As you can see, a delegate is very abstract as it can be described as something that takes in a number of certain types of arguments and returns a certain type. So how do you name a delegate type? In our example above, we used the name `Transformer`. It really depends on the context.
 
-```
+```cs
 static int Add (int x) = x + x;
 t += Add;
 int x = t(3) // x = 6
 ```
 
 You can also multicast delegates. Each method is called in the order it was added to the delegate. However, the return value will be the result of the last method.
+
+```cs runnable
+using System;
+
+namespace App
+{
+    class Hello
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("hello");
+        }
+    }
+}
+```
