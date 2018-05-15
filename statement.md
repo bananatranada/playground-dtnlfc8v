@@ -1,7 +1,7 @@
 # Delegates
 Delegates are objects that act as methods. These methods can be static, instance, lambda, etc.
 
-```
+```csharp
 delegate int Transformer (int x);
 ```
 This delegate takes an int argument and returns an int.
