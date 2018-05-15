@@ -21,7 +21,7 @@ int x = t(4) // x = 16
 As you can see, a delegate is very abstract as it can be described as something that takes in a number of certain types of arguments and returns a certain type. So how do you name a delegate type? In our example above, we used the name `Transformer`. It really depends on the context.
 
 ```cs
-static int Add (int x) = x + x;
+static int Add (int x) => x + x;
 t += Add;
 int x = t(3) // x = 6
 ```
