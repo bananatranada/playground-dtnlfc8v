@@ -28,7 +28,7 @@ int x = t(3) // x = 6
 
 You can also multicast delegates. Each method is called in the order it was added to the delegate. However, the return value will be the result of the last method.
 
-```cs runnable
+```c# runnable
 using System;
 
 namespace App
